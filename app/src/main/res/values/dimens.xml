@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="altoLogoPlatzy">45dp</dimen>
+    <dimen name="tollbaralto">30dp</dimen>
+    <dimen name="cardCornedRadius">4dp</dimen>
+    <dimen name="altoImageViewHome">150dp</dimen>
+    <dimen name="tamañoTitulo">20sp</dimen>
+    <dimen name="tamaniosubtitulo">15sp</dimen>
+    <dimen name="marginHomeSubtitulo">10dp</dimen>
+    <dimen name="itemScheaduleTitulo">30dp</dimen>
+    <dimen name="itemScheaduleSubTitulo">30dp</dimen>
+
+</resources>

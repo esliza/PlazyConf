@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navHomeFragment">
+
+    <fragment
+        android:id="@+id/navHomeFragment"
+        android:name="com.stefany.plazyconf.view.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_scheaduleFragment"
+            app:destination="@id/navScheduleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navScheduleFragment"
+        android:name="com.stefany.plazyconf.view.ui.fragments.ScheaduleFragment"
+        android:label="fragment_scheadule"
+        tools:layout="@layout/fragment_scheadule" >
+        <action
+            android:id="@+id/action_scheaduleFragment_to_speakersFragment"
+            app:destination="@id/navSpearkersFragment" />
+        <action
+            android:id="@+id/action_navScheduleFragment_to_scheduleDetailFragment"
+            app:destination="@id/scheduleDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navSpearkersFragment"
+        android:name="com.stefany.plazyconf.view.ui.fragments.SpeakersFragment"
+        android:label="fragment_speakers"
+        tools:layout="@layout/fragment_speakers" >
+        <action
+            android:id="@+id/action_speakersFragment_to_ubicationFragment"
+            app:destination="@id/navMapFragment" />
+        <action
+            android:id="@+id/action_navSpearkersFragment_to_speakersDetailFragment"
+            app:destination="@id/speakersDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navMapFragment"
+        android:name="com.stefany.plazyconf.view.ui.fragments.UbicationFragment"
+        android:label="fragment_ubication"
+        tools:layout="@layout/fragment_ubication" >
+        <action
+            android:id="@+id/action_navMapFragment_to_mapDetailFragment"
+            app:destination="@id/mapDetailFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/speakersDetailFragment"
+        android:name="com.stefany.plazyconf.view.ui.fragments.SpeakersDetailFragment"
+        android:label="speakersDetailFragment"
+        tools:layout="@layout/fragment_speakers_detail"/>
+    <dialog
+        android:id="@+id/scheduleDetailFragment"
+        android:name="com.stefany.plazyconf.view.ui.fragments.SheduleDetailFragment"
+        android:label="scheduleDetailFragment"
+        tools:layout="@layout/fragment_shedule_detail"/>
+
+    <dialog
+        android:id="@+id/mapDetailFragment"
+        android:name="com.stefany.plazyconf.view.ui.fragments.UbicationDetailDialogFragment"
+        android:label="mapDetailFragment"
+        tools:layout="@layout/fragment_ubication_detail_dialog"/>
+</navigation>

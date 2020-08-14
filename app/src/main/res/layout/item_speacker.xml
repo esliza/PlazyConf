@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/cardCornedRadius"
+    app:cardElevation="4dp"
+    android:layout_margin="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <ImageView
+            android:id="@+id/imgitemSpeakerPhoto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/tvitemSpeakerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre Expositor"
+            android:textStyle="bold"
+            android:textSize="@dimen/tamañoTitulo"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorPrimaryDark"/>
+        <TextView
+            android:id="@+id/tvitemSpeakerJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trabajo expositor"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/tamaniosubtitulo"
+            android:textColor="@color/colorAccent"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
